@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SimilarMoviesTVC" customModule="bks" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="similarMoviesCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="similarMoviesCell" rowHeight="40" id="KGk-i7-Jjw" customClass="SimilarMoviesTVC" customModule="bks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6lk-h2-LOu">
+                        <rect key="frame" x="10" y="10" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="7Ea-hj-4BQ"/>
+                            <constraint firstAttribute="width" constant="100" id="mvI-bq-thL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Similar Movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chj-C9-Fw5">
+                        <rect key="frame" x="120" y="47.5" width="189" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="4iE-gI-a24"/>
+                            <constraint firstAttribute="width" constant="189" id="MZT-q4-PBx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="chj-C9-Fw5" firstAttribute="leading" secondItem="6lk-h2-LOu" secondAttribute="trailing" constant="10" id="I4U-EF-uli"/>
+                    <constraint firstItem="6lk-h2-LOu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="PUZ-c8-LW2"/>
+                    <constraint firstItem="6lk-h2-LOu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="YME-OV-a2v"/>
+                    <constraint firstItem="chj-C9-Fw5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="axh-Eh-vno"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="similarMoviesCell" destination="chj-C9-Fw5" id="VUA-AR-XgE"/>
+                <outlet property="similarMoviesImage" destination="6lk-h2-LOu" id="biZ-6o-CJ7"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="87.053571428571431"/>
+        </tableViewCell>
+    </objects>
+</document>
